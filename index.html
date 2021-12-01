@@ -33,9 +33,13 @@
     var i = 0;
     testButton.addEventListener("click", () => {
         i++;
-        testButton.innerContent = i;
+        testButton.innerContent = `number: ${i}`;
         console.log("hello?");
     })
+    
+    let d = document.createElement("div")
+    d.innerHTML = "sup guys"
+    document.body.append(d)
     
   </script>
 </html>
