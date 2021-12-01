@@ -21,7 +21,7 @@
       </article>
   
       <h2>SUP</h2>
-      Number: <button id="test-button"></button>
+      Number: <button id="test-button">0</button>
     </div>
 
   </body>
@@ -30,9 +30,12 @@
   </style>
   <script>
     var testButton = document.getElementById("test-button");
+    var i = 0;
     testButton.addEventListener("click", () => {
-        testButton.innerContent = (parseInt(testButton.innerContent) + 1) + "";
+        i++;
+        testButton.innerContent = i;
+        console.log("hello?");
     })
-    console.log("hello?");
+    
   </script>
 </html>
